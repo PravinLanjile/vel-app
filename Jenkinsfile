@@ -1,8 +1,10 @@
 pipeline {
     agent {
-        any  // Use any available agent
-        customWorkspace "/data/pipeline"
-    }
+	     node {
+             label 'built-in'
+	         customWorkspace '/data/wsp-1'
+		    }
+        }
     stages {
         stage('install-apache') {
             steps {
