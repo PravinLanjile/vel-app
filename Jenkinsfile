@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'built-in'  // If you want to specify a particular agent label
+        any  // Use any available agent
         customWorkspace "/data/pipeline"
     }
     stages {
