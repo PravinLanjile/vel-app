@@ -1,8 +1,8 @@
 pipeline {
-     agent {
-         node {
-             node 'built-in'		 
-	         customeWorkspace "/data/pipeline"
+    agent {
+        node {
+            label 'built-in'
+            customWorkspace '/data/pipeline'
 		    }
         }
      stages {
